@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Siil_mobile</string>
+    <string name="email">Enter email</string>
+    <string name="password">Enter votre mot de passe</string>
+    <string name="login">Connexion</string>
+    <string name="photo_preview">Vue phoro</string>
+    <string name="take_photo">Prendre Photo</string>
+</resources>
