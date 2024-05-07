@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="edit_text_background">#FFFFFF</color>
+    <color name="button_background">#333</color>
+    <color name="button_text">#FFFFFF</color>
+    <color name="edit_text">#000000</color>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="edit_text_margin_top">64dp</dimen>
+    <dimen name="button_margin_top">24dp</dimen>
 </resources>

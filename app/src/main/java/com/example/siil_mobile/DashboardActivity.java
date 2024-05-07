@@ -15,12 +15,9 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -78,6 +75,8 @@ public class DashboardActivity extends AppCompatActivity {
 
     @SuppressLint("MissingSuperCall")
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
@@ -155,7 +154,8 @@ public class DashboardActivity extends AppCompatActivity {
     public interface UserApiService {
         @Multipart
         @POST("/api/images/upload")
-        Call<ApiResponse> uploadImage(@Header("Authorization") String authToken, @Part MultipartBody.Part file);
+        Call<ApiResponse> uploadImage(@Header("Authorization") String authToken,
+                                      @Part MultipartBody.Part file);
     }
 
 
